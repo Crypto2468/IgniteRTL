@@ -1,0 +1,22 @@
+# Xilinx Vivado generated files
+*.jou
+*.log
+*.pb
+*.str
+*.dir/
+*.ip_user_files/
+*.runs/
+*.srcs/
+*.sim/
+*.hw/
+*.cache/
+*.xpr
+*.zip
+xsim.dir/
+.Xil/
+
+# OS/IDE generated files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
