@@ -1,22 +1,28 @@
-# Xilinx Vivado generated files
-*.jou
+# Vivado compiler log files
 *.log
+*.jou
 *.pb
 *.str
-*.dir/
-*.ip_user_files/
+*.backup.jou
+*.backup.log
+
+# Vivado project directories
+.Xil/
+*.xpr
+*.data/
 *.runs/
 *.srcs/
 *.sim/
+*.ip_user_files/
 *.hw/
 *.cache/
-*.xpr
-*.zip
-xsim.dir/
-.Xil/
+*.ioplanning/
 
-# OS/IDE generated files
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
+# Simulation directory targets
+xsim.dir/
+webtalk*
+xsc*
+xvlog*
+xelab*
+xsim*
+hdl_netlist*
