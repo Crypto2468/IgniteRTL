@@ -1,4 +1,4 @@
-# 🛠️ IgniteRTL
+# ⚡ IgniteRTL
 Verilog project showcasing Digital Electronics, IC design, verification, and reusable RTL IP cores
 
 This repository hosts a comprehensive collection of synthesizable digital integrated circuit (IC) designs implemented in Verilog HDL. All modules are designed to be beginner-friendly, clean, and structured, mimicking high-quality educational designs.
