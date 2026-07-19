@@ -1,19 +1,19 @@
-# LIFO Stack
+# 📥 LIFO Stack
 
-## Description
+## 📝 Description
 A 16-word synchronous Last-In First-Out (LIFO) Stack with an 8-bit data width (configured here as 8 words deep for lab visualization). Standard push and pop control signals manage stack depth, tracked by a stack pointer (`sp`).
 
-## Block Description
+## 📦 Block Description
 - **Stack Pointer (sp)**: Points to the next empty stack slot. Increments on push, decrements on pop.
 - **Top of Stack Readout**: Popping retrieves the last pushed byte.
 - **Simultaneous Action Support**: Overwrites top element if push and pop are asserted concurrently.
 
-## Memory Organization
+## 📊 Memory Organization
 - **Memory Depth**: 8 words.
 - **Word Width**: 8 bits.
 - **Total Capacity**: 64 bits.
 
-## Inputs & Outputs
+## 🔌 Inputs & Outputs
 
 | Port Name | Bit Width | Type   | Description |
 |-----------|-----------|--------|-------------|
@@ -26,7 +26,7 @@ A 16-word synchronous Last-In First-Out (LIFO) Stack with an 8-bit data width (c
 | `full`    | 1         | output | High when stack is full |
 | `empty`   | 1         | output | High when stack is empty |
 
-## Files Included
+## 📁 Files Included
 - `src/lifo_stack.v` (contains Verilog source code)
 - `testbench/lifo_stack_tb.v` (contains self-checking testbench)
 - `rtl/` (empty, schematic layout directory)

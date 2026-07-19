@@ -1,12 +1,12 @@
-# Accumulator Register
+# 📂 Accumulator Register
 
-## Description
+## 📝 Description
 An 8-bit synchronous Accumulator register. It stores the intermediate result of the Arithmetic Logic Unit (ALU) execution cycle, making it immediately available for subsequent operations.
 
-## Functional Overview
+## ⚙️ Functional Overview
 The Accumulator functions as a default primary destination register in many classical CPU architectures. The control unit asserts `en` at the end of an arithmetic clock cycle to latch the ALU output into the Accumulator.
 
-## Inputs & Outputs
+## 🔌 Inputs & Outputs
 
 | Port Name | Bit Width | Type   | Description |
 |-----------|-----------|--------|-------------|
@@ -16,11 +16,11 @@ The Accumulator functions as a default primary destination register in many clas
 | `din`     | 8         | input  | 8-bit ALU input data |
 | `dout`    | 8         | output | 8-bit accumulated output |
 
-## Block Description
+## 📦 Block Description
 - **Asynchronous Clear**: Activating `rst_n` clears the output to `8'h00`.
 - **Clock Latch**: Driven on the rising clock edge when `en = 1`, copying `din` to `dout`. Otherwise, holds its current state.
 
-## Files Included
+## 📁 Files Included
 - `src/accumulator.v` (contains Verilog source code)
 - `testbench/accumulator_tb.v` (contains self-checking testbench)
 - `rtl/` (empty, schematic layout directory)

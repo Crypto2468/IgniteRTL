@@ -1,9 +1,9 @@
-# 4x2 Binary Encoder
+# 🔐 4x2 Binary Encoder
 
-## Description
+## 📝 Description
 A 4x2 Binary Encoder is a combinational logic circuit that performs the reverse operation of a decoder. It takes four binary input lines (`i0` to `i3`) and generates a 2-bit binary output code (`y[1:0]`) representing the active input line, assuming only one input line is active (high) at any given time.
 
-## Truth Table
+## 📋 Truth Table
 | Input `i3` | Input `i2` | Input `i1` | Input `i0` | Output `y[1]` | Output `y[0]` | Description |
 |:----------:|:----------:|:----------:|:----------:|:------------:|:------------:|-------------|
 |     0      |     0      |     0      |     1      |      0       |      0       | encodes `i0` |
@@ -11,7 +11,7 @@ A 4x2 Binary Encoder is a combinational logic circuit that performs the reverse 
 |     0      |     1      |     0      |     0      |      1       |      0       | encodes `i2` |
 |     1      |     0      |     0      |     0      |      1       |      1       | encodes `i3` |
 
-## Module I/O
+## 🔹 Module I/O
 | Port Name | Bit Width | Type   | Description |
 |-----------|-----------|--------|-------------|
 | `i0`      | 1         | input  | Input line 0 |
@@ -20,7 +20,7 @@ A 4x2 Binary Encoder is a combinational logic circuit that performs the reverse 
 | `i3`      | 1         | input  | Input line 3 |
 | `y`       | 2         | output | 2-bit encoded binary output (`y[1]`, `y[0]`) |
 
-## Files Included
+## 📁 Files Included
 - `src/` (contains Verilog source code)
 - `testbench/` (contains self-checking testbench)
 - `rtl/` (empty, schematic layout directory)

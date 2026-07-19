@@ -1,12 +1,12 @@
-# Carry Lookahead Adder
+# ⚡ Carry Lookahead Adder
 
-## Description
+## 📝 Description
 The Carry Lookahead Adder (CLA) is a high-speed combinational binary adder that reduces carry propagation delay by computing carry signals in parallel. It calculates carry bits prior to the sum calculations using specialized propagate and generate equations.
 
-## Truth Table
+## 📋 Truth Table
 
 
-## Module I/O
+## 🔹 Module I/O
 | Port Name | Bit Width | Type | Description |
 |-----------|-----------|------|-------------|
 | `a`       | 4         | input| First 4-bit operand vector |
@@ -17,7 +17,7 @@ The Carry Lookahead Adder (CLA) is a high-speed combinational binary adder that 
 | `pg`      | 1         | output| Block propagate term for cascading |
 | `gg`      | 1         | output| Block generate term for cascading |
 
-## Files Included
+## 📁 Files Included
 - `src/` (contains Verilog source code)
 - `testbench/` (contains self-checking testbench)
 - `rtl/` (empty, schematic layout directory)

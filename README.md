@@ -1,14 +1,14 @@
-# Digital IC Portfolio in Verilog
+# 🛠️ Digital IC Portfolio in Verilog
 
 This repository hosts a comprehensive portfolio of synthesizable digital integrated circuit (IC) designs implemented in Verilog HDL. All modules are designed to be beginner-friendly, clean, and structured, mimicking high-quality educational designs.
 
-## Features
+## 🌟 Features
 - Highly structured, modular codebases.
 - Standardized file and directory layout for every project.
 - Self-checking testbenches with clock generators and active monitoring.
 - Clear step-by-step documentation on setting up, simulating, and validating designs.
 
-## Repository Structure
+## 📂 Repository Structure
 ```text
 Digital-IC-Portfolio/
 ├── Arithmetic/        # Adders, subtractors, multipliers, dividers
@@ -21,12 +21,12 @@ Digital-IC-Portfolio/
 └── Documentation/     # Setup guides and design specifications
 ```
 
-## Tools Used
+## 🛠️ Tools Used
 - **AMD Xilinx Vivado ML**: Used to perform behavioral simulation, RTL elaboration, and schematic layout inspection.
 - **Verilog HDL**: Implementation language (synthesizable Verilog-2001 standard).
 - **Git & GitHub**: Version control and portfolio hosting.
 
-## Portfolio Sections
+## 📚 Portfolio Sections
 
 ### 1. Arithmetic
 Basic arithmetic building blocks including half/full adders, half/full subtractors, lookahead adders, multipliers, and restorers.
@@ -49,7 +49,7 @@ Asynchronous UART (Transmitter, Receiver, Transceiver), SPI bus loops (Master, S
 ### 7. CPU Subsystems
 Instruction registers, instruction decoders, GPR register files, arithmetic logical units, control state machines, and a Simple RISC CPU core.
 
-## How to Run a Project
+## 💻 How to Run a Project
 1. Clone the repository:
    ```bash
    git clone https://github.com/Crypto2468/IgniteRTL.git
@@ -59,18 +59,18 @@ Instruction registers, instruction decoders, GPR register files, arithmetic logi
 4. Import the simulation files from the project's `testbench/` directory.
 5. Click Run Simulation -> Run Behavioral Simulation to view the waveforms.
 
-## Screenshots (Placeholders)
+## 🖼️ Screenshots (Placeholders)
 RTL Schematics and waveform plots can be generated using Vivado and saved under each project folder:
 - RTL Schematics: Saved as `rtl/rtl.png`
 - Simulation Waveforms: Saved as `waveform/waveform.png`
 
-## Future Improvements
+## 🚀 Future Improvements
 - Implement a pipelined CPU core.
 - Add AXI interface wrappers.
 - Implement DDR3 memory controllers.
 
-## Author Information
+## 🔹 Author Information
 Designed and developed by IgniteRTL Contributor.
 
-## License
+## 📄 License
 Licensed under the [MIT License](file:///c:/Users/crypt/OneDrive/Documents/vhdl%20library/Digital-IC-Portfolio/LICENSE).

@@ -1,19 +1,19 @@
-# Register File
+# 📁 Register File
 
-## Description
+## 📝 Description
 An 8-word CPU register file with one write port and two read ports (8 registers, each 8 bits wide). It enables simultaneous reads from two registers combinationally (asynchronously) while writing to a register synchronously.
 
-## Block Description
+## 📦 Block Description
 - **Combinational Reads**: Multi-port read access outputs data instantly depending on addresses `rd_addr_a` and `rd_addr_b`.
 - **Synchronous Write**: Writing updates registers on the clock edge when write enable `we` is asserted.
 - **Reset Logic**: Activating active-low reset clears all registers to `8'h00`.
 
-## Memory Organization
+## 📊 Memory Organization
 - **Memory Depth**: 8 registers.
 - **Word Width**: 8 bits.
 - **Total Capacity**: 64 bits.
 
-## Inputs & Outputs
+## 🔌 Inputs & Outputs
 
 | Port Name | Bit Width | Type   | Description |
 |-----------|-----------|--------|-------------|
@@ -27,7 +27,7 @@ An 8-word CPU register file with one write port and two read ports (8 registers,
 | `rd_data_a`| 8        | output | 8-bit Read Data A |
 | `rd_data_b`| 8        | output | 8-bit Read Data B |
 
-## Files Included
+## 📁 Files Included
 - `src/register_file.v` (contains Verilog source code)
 - `testbench/register_file_tb.v` (contains self-checking testbench)
 - `rtl/` (empty, schematic layout directory)

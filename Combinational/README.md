@@ -1,8 +1,8 @@
-# Combinational Circuits Portfolio
+# 📓 Combinational Circuits Portfolio
 
 Welcome to the Combinational Circuits section of the portfolio. This folder contains beginner-friendly, synthesizable Verilog-2001 implementations of essential combinational logic blocks. Each project is fully self-contained with source code, testbenches, and documentation.
 
-## Project Structure
+## 📂 Project Structure
 Each project subdirectory follows this clean folder layout:
 ```text
 <Project_Name>/
@@ -12,7 +12,7 @@ Each project subdirectory follows this clean folder layout:
 └── rtl/          # RTL gate schematics output directory
 ```
 
-## Directory Index
+## 📖 Directory Index
 
 | # | Project Folder | Description | Ports (I/O) |
 |---|---|---|---|
@@ -36,7 +36,7 @@ Each project subdirectory follows this clean folder layout:
 
 ---
 
-## Coding Guidelines Met
+## 🔹 Coding Guidelines Met
 1. **Verilog-2001**: Pure dataflow and behavioral designs without SystemVerilog primitives.
 2. **Beginner-Friendly**: Avoided excessive nesting or compact math; used basic select cases and conditional assignments.
 3. **Structured Comments**: Every file starts with standard tags (`// Module:`, `// Description:`, `// Author:`).

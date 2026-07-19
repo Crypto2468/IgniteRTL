@@ -1,14 +1,14 @@
-# SPI Master
+# 🔌 SPI Master
 
-## Description
+## 📝 Description
 A Serial Peripheral Interface (SPI) Master controller configured for Mode 0 (CPOL=0, CPHA=0). It serializes a parallel byte (`din[7:0]`) onto `mosi` MSB-first while capturing input bits from `miso` synchronized to the generated serial clock (`sclk`).
 
-## Protocol Overview
+## 🌐 Protocol Overview
 SPI is a synchronous, full-duplex, four-wire serial interface. In Mode 0:
 - **CPOL = 0**: Clock idles low.
 - **CPHA = 0**: Data is sampled on the first rising edge of `sclk` and shifted out on the subsequent falling edge.
 
-## Inputs & Outputs
+## 🔌 Inputs & Outputs
 
 | Port Name | Bit Width | Type   | Description |
 |-----------|-----------|--------|-------------|
@@ -23,7 +23,7 @@ SPI is a synchronous, full-duplex, four-wire serial interface. In Mode 0:
 | `mosi`    | 1         | output | Master-Out Slave-In serial output |
 | `miso`    | 1         | input  | Master-In Slave-Out serial input |
 
-## Files Included
+## 📁 Files Included
 - `src/spi_master.v` (contains Verilog source code)
 - `testbench/spi_master_tb.v` (contains self-checking testbench)
 - `rtl/` (empty, schematic layout directory)

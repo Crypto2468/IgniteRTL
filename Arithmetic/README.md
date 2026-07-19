@@ -1,8 +1,8 @@
-# Arithmetic Circuits Portfolio
+# 📓 Arithmetic Circuits Portfolio
 
 Welcome to the Arithmetic Circuits section of the portfolio. This directory features fundamental binary and BCD arithmetic processing blocks implemented in synthesizable, beginner-friendly Verilog-2001.
 
-## Project Structure
+## 📂 Project Structure
 Every arithmetic module folder follows this strict self-contained layout:
 ```text
 <Project_Name>/
@@ -12,7 +12,7 @@ Every arithmetic module folder follows this strict self-contained layout:
 └── waveform/       # Simulation waveform screen captures (tracked via .gitkeep)
 ```
 
-## Directory Index
+## 📖 Directory Index
 
 | # | Project Folder | Description | Ports (I/O) |
 |---|---|---|---|

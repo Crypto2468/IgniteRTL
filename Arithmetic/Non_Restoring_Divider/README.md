@@ -1,12 +1,12 @@
-# Non-Restoring Divider (Sequential Unsigned Division)
+# ➗ Non-Restoring Divider (Sequential Unsigned Division)
 
-## Description
+## 📝 Description
 The Non-Restoring Divider is a sequential digital arithmetic block that computes the $N$-bit quotient and $N$-bit remainder of two $N$-bit unsigned binary numbers using the non-restoring division algorithm. It optimizes hardware execution time by removing the conditional register "restoration" steps during active computation cycles.
 
-## Truth Table
+## 📋 Truth Table
 
 
-## Module I/O
+## 🔹 Module I/O
 | Port Name | Bit Width | Type | Description |
 |-----------|-----------|------|-------------|
 | `clk`      | 1         | input | System Clock |
@@ -20,7 +20,7 @@ The Non-Restoring Divider is a sequential digital arithmetic block that computes
 | `done`        | 1         | output | Active-high completion signal |
 | `div_by_zero` | 1         | output | Active-high division-by-zero error flag |
 
-## Files Included
+## 📁 Files Included
 - `src/` (contains Verilog source code)
 - `testbench/` (contains self-checking testbench)
 - `rtl/` (empty, schematic layout directory)

@@ -1,9 +1,9 @@
-# Digital Door Lock
+# 🔒 Digital Door Lock
 
-## Description
+## 📝 Description
 A digital door lock security FSM that validates a 3-digit serial passcode (`3-1-2`). Successful validation opens the lock (`unlocked = 1`). Any incorrect digit instantly locks the system into an alarm state (`alarm = 1`) that can only be cleared by reset.
 
-## State Diagram Explanation
+## 📊 State Diagram Explanation
 The FSM utilizes 5 states:
 - `STATE_LOCKED` (000): Initial idle locked state. Expecting digit 3.
 - `STATE_D1` (001): First digit valid. Expecting digit 1.
@@ -11,7 +11,7 @@ The FSM utilizes 5 states:
 - `STATE_UNLOCKED` (011): Access granted state.
 - `STATE_ALARM` (100): Security alert state. Locked out.
 
-## State Transition Table
+## 📋 State Transition Table
 
 | Current State | Valid Input | Digit Input | Next State | Unlocked | Alarm |
 |:-------------:|:-----------:|:-----------:|:----------:|:--------:|:-----:|
@@ -24,7 +24,7 @@ The FSM utilizes 5 states:
 |`STATE_UNLOCKED`|     X      |      X      |`STATE_UNLOCKED`|  1     |   0   |
 | `STATE_ALARM` |     X      |      X      | `STATE_ALARM`|    0     |   1   |
 
-## Inputs & Outputs
+## 🔌 Inputs & Outputs
 
 | Port Name | Bit Width | Type   | Description |
 |-----------|-----------|--------|-------------|
@@ -35,7 +35,7 @@ The FSM utilizes 5 states:
 | `unlocked`| 1         | output | High when lock is open |
 | `alarm`   | 1         | output | High when alarm is triggered |
 
-## Files Included
+## 📁 Files Included
 - `src/digital_door_lock.v` (contains Verilog source code)
 - `testbench/digital_door_lock_tb.v` (contains self-checking testbench)
 - `rtl/` (empty, schematic layout directory)

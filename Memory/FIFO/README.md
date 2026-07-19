@@ -1,19 +1,19 @@
-# FIFO Queue
+# 🔄 FIFO Queue
 
-## Description
+## 📝 Description
 A First-In First-Out (FIFO) queue utilizing a circular ring buffer design. It manages data transfers between synchronous domains, providing active flags indicating `full` and `empty` memory states.
 
-## Block Description
+## 📦 Block Description
 - **Circular Buffer**: Pointers `wr_ptr` and `rd_ptr` wrap around using modular arithmetic.
 - **Counter Logic**: Tracks current byte count to determine `full` and `empty` states.
 - **Gated Write/Read**: Operations are ignored if the FIFO is full during a write or empty during a read.
 
-## Memory Organization
+## 📊 Memory Organization
 - **Memory Depth**: 8 words.
 - **Word Width**: 8 bits.
 - **Total Capacity**: 64 bits.
 
-## Inputs & Outputs
+## 🔌 Inputs & Outputs
 
 | Port Name | Bit Width | Type   | Description |
 |-----------|-----------|--------|-------------|
@@ -26,7 +26,7 @@ A First-In First-Out (FIFO) queue utilizing a circular ring buffer design. It ma
 | `full`    | 1         | output | High when queue is full |
 | `empty`   | 1         | output | High when queue is empty |
 
-## Files Included
+## 📁 Files Included
 - `src/fifo.v` (contains Verilog source code)
 - `testbench/fifo_tb.v` (contains self-checking testbench)
 - `rtl/` (empty, schematic layout directory)

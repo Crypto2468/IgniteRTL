@@ -1,9 +1,9 @@
-# JK Flip-Flop
+# 🎚️ JK Flip-Flop
 
-## Description
+## 📝 Description
 A JK Flip-Flop is a universal edge-triggered flip-flop that refines the invalid state of the basic SR flip-flop. When both inputs $J$ and $K$ are high, the output toggles to its complement on the active clock edge.
 
-## Truth Table
+## 📋 Truth Table
 | Input J | Input K | Clock | Output Q(t+1) | Description |
 |:-------:|:-------:|:-----:|:-------------:|-------------|
 |    0    |    0    |  pos  |     Q(t)      | Hold State  |
@@ -11,7 +11,7 @@ A JK Flip-Flop is a universal edge-triggered flip-flop that refines the invalid 
 |    1    |    0    |  pos  |       1       | Set State   |
 |    1    |    1    |  pos  |    ~Q(t)      | Toggle State|
 
-## Module I/O
+## 🔹 Module I/O
 | Port Name | Bit Width | Type   | Description |
 |-----------|-----------|--------|-------------|
 | `clk`     | 1         | input  | Clock signal |
@@ -21,7 +21,7 @@ A JK Flip-Flop is a universal edge-triggered flip-flop that refines the invalid 
 | `q`       | 1         | output | Flip-flop output state |
 | `q_n`     | 1         | output | Complement output state |
 
-## Files Included
+## 📁 Files Included
 - `src/` (contains Verilog source code)
 - `testbench/` (contains self-checking testbench)
 - `rtl/` (empty, schematic layout directory)

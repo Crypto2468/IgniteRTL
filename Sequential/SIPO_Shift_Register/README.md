@@ -1,12 +1,12 @@
-# Serial-In Parallel-Out (SIPO) Shift Register
+# 📂 Serial-In Parallel-Out (SIPO) Shift Register
 
-## Description
+## 📝 Description
 A Serial-In Parallel-Out (SIPO) Shift Register shifts serial input data (`si`) into internal flip-flop stages synchronously. All internal stage outputs are presented concurrently as a multi-bit parallel output vector (`po[3:0]`).
 
-## Truth Table
+## 📋 Truth Table
 
 
-## Module I/O
+## 🔹 Module I/O
 | Port Name | Bit Width | Type   | Description |
 |-----------|-----------|--------|-------------|
 | `clk`     | 1         | input  | Clock input |
@@ -14,7 +14,7 @@ A Serial-In Parallel-Out (SIPO) Shift Register shifts serial input data (`si`) i
 | `si`      | 1         | input  | Serial data input |
 | `po`      | 4         | output | 4-bit parallel data output |
 
-## Files Included
+## 📁 Files Included
 - `src/` (contains Verilog source code)
 - `testbench/` (contains self-checking testbench)
 - `rtl/` (empty, schematic layout directory)

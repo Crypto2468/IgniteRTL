@@ -1,16 +1,16 @@
-# Traffic Light Controller
+# 🚦 Traffic Light Controller
 
-## Description
+## 📝 Description
 A dual-highway junction controller regulating North-South (NS) and East-West (EW) traffic. It counts clock cycles to transition between Green, Yellow, and Red lights for each highway direction.
 
-## State Diagram Explanation
+## 📊 State Diagram Explanation
 The FSM is structured into 4 states:
 - `NS_GREEN` (00): NS Green / EW Red. Transitions to `NS_YELLOW` after 6 clock cycles.
 - `NS_YELLOW` (01): NS Yellow / EW Red. Transitions to `EW_GREEN` after 2 clock cycles.
 - `EW_GREEN` (10): NS Red / EW Green. Transitions to `EW_YELLOW` after 6 clock cycles.
 - `EW_YELLOW` (11): NS Red / EW Yellow. Transitions to `NS_GREEN` after 2 clock cycles.
 
-## State Transition Table
+## 📋 State Transition Table
 
 | Current State | Condition | Next State | NS Output (R/Y/G) | EW Output (R/Y/G) |
 |:-------------:|:---------:|:----------:|:-----------------:|:-----------------:|
@@ -23,7 +23,7 @@ The FSM is structured into 4 states:
 |  `EW_YELLOW`  | timer < 1 | `EW_YELLOW` |       100         |       010         |
 |  `EW_YELLOW`  | timer >= 1| `NS_GREEN`  |       100         |       010         |
 
-## Inputs & Outputs
+## 🔌 Inputs & Outputs
 
 | Port Name | Bit Width | Type   | Description |
 |-----------|-----------|--------|-------------|
@@ -32,7 +32,7 @@ The FSM is structured into 4 states:
 | `ns_light`| 3         | output | North-South light vector (Red, Yellow, Green) |
 | `ew_light`| 3         | output | East-West light vector (Red, Yellow, Green) |
 
-## Files Included
+## 📁 Files Included
 - `src/traffic_light_controller.v` (contains Verilog source code)
 - `testbench/traffic_light_controller_tb.v` (contains self-checking testbench)
 - `rtl/` (empty, schematic layout directory)

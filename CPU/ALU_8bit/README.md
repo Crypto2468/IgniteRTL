@@ -1,12 +1,12 @@
-# 8-Bit Arithmetic Logic Unit (ALU_8bit)
+# ⚙️ 8-Bit Arithmetic Logic Unit (ALU_8bit)
 
-## Description
+## 📝 Description
 An 8-bit combinational Arithmetic Logic Unit (ALU). It performs fundamental calculations including addition, subtraction, bitwise logic operations, and bit shifting based on a 3-bit operational code (`op_sel[2:0]`).
 
-## Functional Overview
+## ⚙️ Functional Overview
 The ALU is the mathematical heart of the CPU. It receives operands from the Register File or intermediate busses, executes the operation selected by the Control Unit, and updates status flags (`zero`, `carry`) to guide conditional branch logic.
 
-## Inputs & Outputs
+## 🔌 Inputs & Outputs
 
 | Port Name | Bit Width | Type   | Description |
 |-----------|-----------|--------|-------------|
@@ -17,7 +17,7 @@ The ALU is the mathematical heart of the CPU. It receives operands from the Regi
 | `zero`    | 1         | output | High if output `result` matches `8'h00` |
 | `carry`   | 1         | output | Carry output (addition overflow flag) |
 
-## Block Description
+## 📦 Block Description
 - **Combinational ALU Core**: Fully combinational execution path utilizing a `case` statement mapping:
   - `3'b000`: Addition (`a + b`)
   - `3'b001`: Subtraction (`a - b`)
@@ -28,7 +28,7 @@ The ALU is the mathematical heart of the CPU. It receives operands from the Regi
   - `3'b110`: Shift Left (`a << 1`)
   - `3'b111`: Shift Right (`a >> 1`)
 
-## Files Included
+## 📁 Files Included
 - `src/alu_8bit.v` (contains Verilog source code)
 - `testbench/alu_8bit_tb.v` (contains self-checking testbench)
 - `rtl/` (empty, schematic layout directory)

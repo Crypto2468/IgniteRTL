@@ -1,8 +1,8 @@
-# Finite State Machines (FSM) Portfolio
+# 🧠 Finite State Machines (FSM) Portfolio
 
 Welcome to the Finite State Machines (FSM) section of the portfolio. This folder contains synthesizable, industry-standard Verilog implementations of various sequence detectors, controllers, and complex protocol logic machines.
 
-## Project Structure
+## 📂 Project Structure
 Every FSM project subdirectory follows this unified self-contained folder structure:
 ```text
 <Project_Name>/
@@ -12,7 +12,7 @@ Every FSM project subdirectory follows this unified self-contained folder struct
 └── waveform/       # Simulation waveform screen captures (tracked via .gitkeep)
 ```
 
-## Directory Index
+## 📖 Directory Index
 
 | # | Project Folder | Description | Ports (I/O) |
 |---|---|---|---|

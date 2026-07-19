@@ -1,19 +1,19 @@
-# Dual-Port RAM
+# ⚡ Dual-Port RAM
 
-## Description
+## 📝 Description
 A 16-word synchronous Dual-Port Random Access Memory (RAM) with an 8-bit data width. It features two completely independent interfaces (Port A and Port B), allowing concurrent read and write operations at different memory locations.
 
-## Block Description
+## 📦 Block Description
 - **Independent Ports**: Port A and Port B have dedicated control, address, and data vectors.
 - **Concurrent Access Support**: Allows simultaneous reads and writes to different memory cells.
 - **Synchronous Logic**: Both Port A and Port B perform memory transactions synced to the rising edge of the shared clock.
 
-## Memory Organization
+## 📊 Memory Organization
 - **Memory Depth**: 16 words.
 - **Word Width**: 8 bits.
 - **Total Capacity**: 128 bits.
 
-## Inputs & Outputs
+## 🔌 Inputs & Outputs
 
 | Port Name | Bit Width | Type   | Description |
 |-----------|-----------|--------|-------------|
@@ -27,7 +27,7 @@ A 16-word synchronous Dual-Port Random Access Memory (RAM) with an 8-bit data wi
 | `din_b`   | 8         | input  | Port B 8-bit Data input |
 | `dout_b`  | 8         | output | Port B 8-bit Data output |
 
-## Files Included
+## 📁 Files Included
 - `src/dual_port_ram.v` (contains Verilog source code)
 - `testbench/dual_port_ram_tb.v` (contains self-checking testbench)
 - `rtl/` (empty, schematic layout directory)

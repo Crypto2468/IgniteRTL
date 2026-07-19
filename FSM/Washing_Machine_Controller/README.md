@@ -1,9 +1,9 @@
-# Washing Machine Controller
+# 🧼 Washing Machine Controller
 
-## Description
+## 📝 Description
 An automated washing machine cycle controller. It transitions sequentially through water filling, wash cycle agitation, rinsing, and spin drying based on stage completion triggers.
 
-## State Diagram Explanation
+## 📊 State Diagram Explanation
 The FSM transitions sequentially:
 - `STATE_IDLE` (000): Waiting for cycle start. Transitions to `STATE_FILL` when `start = 1`.
 - `STATE_FILL` (001): Water inlet valve open. Transitions to `STATE_WASH` when `cycle_complete = 1`.
@@ -11,7 +11,7 @@ The FSM transitions sequentially:
 - `STATE_RINSE` (011): Water inlet and drain pump active. Transitions to `STATE_SPIN` when `cycle_complete = 1`.
 - `STATE_SPIN` (100): Spin dryer and pump active. Transitions to `STATE_IDLE` when `cycle_complete = 1`.
 
-## State Transition Table
+## 📋 State Transition Table
 
 | Current State | Input | Next State | Water Inlet | Agitator | Pump Out | Spin Dry |
 |:-------------:|:-----:|:----------:|:-----------:|:--------:|:--------:|:--------:|
@@ -21,7 +21,7 @@ The FSM transitions sequentially:
 | `STATE_RINSE` | complete | `STATE_SPIN` |      1      |    0     |    1     |    0     |
 | `STATE_SPIN`  | complete | `STATE_IDLE` |      0      |    0     |    1     |    1     |
 
-## Inputs & Outputs
+## 🔌 Inputs & Outputs
 
 | Port Name | Bit Width | Type   | Description |
 |-----------|-----------|--------|-------------|
@@ -34,7 +34,7 @@ The FSM transitions sequentially:
 | `pump_out`| 1         | output | Activates water drainage pump |
 | `spin_dry`| 1         | output | Activates laundry spin dry mode |
 
-## Files Included
+## 📁 Files Included
 - `src/washing_machine_controller.v` (contains Verilog source code)
 - `testbench/washing_machine_controller_tb.v` (contains self-checking testbench)
 - `rtl/` (empty, schematic layout directory)

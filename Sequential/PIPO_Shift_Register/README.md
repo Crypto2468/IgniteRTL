@@ -1,12 +1,12 @@
-# Parallel-In Parallel-Out (PIPO) Shift Register
+# 📂 Parallel-In Parallel-Out (PIPO) Shift Register
 
-## Description
+## 📝 Description
 A Parallel-In Parallel-Out (PIPO) Register is a synchronous circuit that accepts a multi-bit parallel input vector (`pi[3:0]`) and transfers it simultaneously to the parallel output lines (`po[3:0]`) on the active edge of the clock.
 
-## Truth Table
+## 📋 Truth Table
 
 
-## Module I/O
+## 🔹 Module I/O
 | Port Name | Bit Width | Type   | Description |
 |-----------|-----------|--------|-------------|
 | `clk`     | 1         | input  | Clock input |
@@ -14,7 +14,7 @@ A Parallel-In Parallel-Out (PIPO) Register is a synchronous circuit that accepts
 | `pi`      | 4         | input  | 4-bit parallel data input |
 | `po`      | 4         | output | 4-bit parallel data output |
 
-## Files Included
+## 📁 Files Included
 - `src/` (contains Verilog source code)
 - `testbench/` (contains self-checking testbench)
 - `rtl/` (empty, schematic layout directory)

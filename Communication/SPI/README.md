@@ -1,16 +1,16 @@
-# SPI Loopback System
+# 🔌 SPI Loopback System
 
-## Description
+## 📝 Description
 A system-level wrapper connecting the `spi_master` and `spi_slave` modules in a local loopback environment. It validates full-duplex synchronous data transmission between master and slave.
 
-## Protocol Overview
+## 🌐 Protocol Overview
 The system establishes a 4-wire connection between master and slave:
 - **sclk**: Serial clock driven by Master.
 - **ss_n**: Active-low Chip Select driven by Master.
 - **mosi**: Master-Out Slave-In serial data.
 - **miso**: Master-In Slave-Out serial data.
 
-## Inputs & Outputs
+## 🔌 Inputs & Outputs
 
 | Port Name | Bit Width | Type   | Description |
 |-----------|-----------|--------|-------------|
@@ -24,7 +24,7 @@ The system establishes a 4-wire connection between master and slave:
 | `slave_rx`| 8         | output | Slave received payload byte |
 | `slave_done`| 1        | output | High when slave transaction completes |
 
-## Files Included
+## 📁 Files Included
 - `src/spi.v` (contains Verilog source code)
 - `testbench/spi_tb.v` (contains self-checking testbench)
 - `rtl/` (empty, schematic layout directory)

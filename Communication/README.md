@@ -1,8 +1,8 @@
-# Communication Protocols Portfolio
+# 📡 Communication Protocols Portfolio
 
 Welcome to the Communication Protocols section of the portfolio. This directory features synthesizable, industry-standard Verilog implementations of core digital communication buses and peripherals, including UART, SPI, and I2C controllers.
 
-## Project Structure
+## 📂 Project Structure
 Every Communication project subdirectory follows this unified self-contained folder structure:
 ```text
 <Project_Name>/
@@ -12,7 +12,7 @@ Every Communication project subdirectory follows this unified self-contained fol
 └── waveform/       # Simulation waveform screen captures (tracked via .gitkeep)
 ```
 
-## Directory Index
+## 📖 Directory Index
 
 | # | Project Folder | Description | Ports (I/O) |
 |---|---|---|---|

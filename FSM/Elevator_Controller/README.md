@@ -1,16 +1,16 @@
-# Elevator Controller
+# 🛗 Elevator Controller
 
-## Description
+## 📝 Description
 A basic elevator controller regulating movement across Floors 0, 1, and 2. It tracks destination requests, controls upward/downward cabin motors, and activates the door exit cycle.
 
-## State Diagram Explanation
+## 📊 State Diagram Explanation
 The FSM consists of 4 states:
 - `STATE_IDLE` (00): Stationed at floor. Transitions to `STATE_UP` or `STATE_DOWN` depending on floor request logic.
 - `STATE_UP` (01): Upward motor active. Transitions to `STATE_DOOR` when cabin matches request.
 - `STATE_DOWN` (10): Downward motor active. Transitions to `STATE_DOOR` when cabin matches request.
 - `STATE_DOOR` (11): Cabin door active. Automatically transitions back to `STATE_IDLE` on the next clock.
 
-## State Transition Table
+## 📋 State Transition Table
 
 | Current State | Condition | Next State | Motor Up | Motor Down | Door Open |
 |:-------------:|:---------:|:----------:|:--------:|:----------:|:---------:|
@@ -21,7 +21,7 @@ The FSM consists of 4 states:
 |  `STATE_DOWN` | target reach| `STATE_DOOR` |    0     |     1      |     0     |
 |  `STATE_DOOR` |     X     | `STATE_IDLE` |    0     |     0      |     1     |
 
-## Inputs & Outputs
+## 🔌 Inputs & Outputs
 
 | Port Name | Bit Width | Type   | Description |
 |-----------|-----------|--------|-------------|
@@ -33,7 +33,7 @@ The FSM consists of 4 states:
 | `motor_down`| 1       | output | High when elevator is moving down |
 | `door_open`| 1        | output | High when door is open |
 
-## Files Included
+## 📁 Files Included
 - `src/elevator_controller.v` (contains Verilog source code)
 - `testbench/elevator_controller_tb.v` (contains self-checking testbench)
 - `rtl/` (empty, schematic layout directory)

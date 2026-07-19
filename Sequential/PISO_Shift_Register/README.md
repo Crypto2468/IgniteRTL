@@ -1,12 +1,12 @@
-# Parallel-In Serial-Out (PISO) Shift Register
+# 📂 Parallel-In Serial-Out (PISO) Shift Register
 
-## Description
+## 📝 Description
 A Parallel-In Serial-Out (PISO) Shift Register allows multi-bit parallel data (`pi[3:0]`) to be loaded in a single clock cycle when `load_shift` is high. When `load_shift` is low, the data is shifted out serially one bit at a time via `so`.
 
-## Truth Table
+## 📋 Truth Table
 
 
-## Module I/O
+## 🔹 Module I/O
 | Port Name | Bit Width | Type   | Description |
 |-----------|-----------|--------|-------------|
 | `clk`     | 1         | input  | Clock input |
@@ -15,7 +15,7 @@ A Parallel-In Serial-Out (PISO) Shift Register allows multi-bit parallel data (`
 | `pi`      | 4         | input  | 4-bit parallel data input |
 | `so`      | 1         | output | Serial data output |
 
-## Files Included
+## 📁 Files Included
 - `src/` (contains Verilog source code)
 - `testbench/` (contains self-checking testbench)
 - `rtl/` (empty, schematic layout directory)

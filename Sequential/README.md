@@ -1,8 +1,8 @@
-# Sequential Logic Portfolio
+# ⏳ Sequential Logic Portfolio
 
 Welcome to the Sequential Logic section of the portfolio. This folder contains synthesizable, beginner-friendly Verilog-2001 implementations of basic memory elements (latches, flip-flops), registers, shift registers, and counters.
 
-## Project Structure
+## 📂 Project Structure
 Every sequential logic project subdirectory follows this unified self-contained folder structure:
 ```text
 <Project_Name>/
@@ -12,7 +12,7 @@ Every sequential logic project subdirectory follows this unified self-contained 
 └── waveform/       # Simulation waveform screen captures (tracked via .gitkeep)
 ```
 
-## Directory Index
+## 📖 Directory Index
 
 | # | Project Folder | Description | Ports (I/O) |
 |---|---|---|---|

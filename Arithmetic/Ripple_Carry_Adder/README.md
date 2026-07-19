@@ -1,12 +1,12 @@
-# Ripple Carry Adder
+# 🧮 Ripple Carry Adder
 
-## Description
+## 📝 Description
 The Ripple Carry Adder (RCA) is a multi-bit combinational digital adder built by cascading multiple 1-bit full adders in series. It is parameterized to support any desired operand bit-width.
 
-## Truth Table
+## 📋 Truth Table
 
 
-## Module I/O
+## 🔹 Module I/O
 | Port Name | Bit Width | Type | Description |
 |-----------|-----------|------|-------------|
 | `a`       | `WIDTH`   | input| First binary input vector |
@@ -15,7 +15,7 @@ The Ripple Carry Adder (RCA) is a multi-bit combinational digital adder built by
 | `sum`     | `WIDTH`   | output| Sum output vector |
 | `cout`    | 1         | output| Carry-out from the MSB stage |
 
-## Files Included
+## 📁 Files Included
 - `src/` (contains Verilog source code)
 - `testbench/` (contains self-checking testbench)
 - `rtl/` (empty, schematic layout directory)

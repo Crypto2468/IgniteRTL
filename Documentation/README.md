@@ -1,8 +1,8 @@
-# Documentation Index
+# 📖 Documentation Index
 
 This directory contains instructional guides for setting up Vivado, writing synthesizable code, executing testbenches, and understanding hardware synthesis concepts.
 
-## File Guide
+## 🔹 File Guide
 
 | File Name | Description |
 |-----------|-------------|

@@ -1,12 +1,12 @@
-# UART Transceiver
+# 📟 UART Transceiver
 
-## Description
+## 📝 Description
 A Full-Duplex Universal Asynchronous Receiver-Transmitter (UART) Transceiver. It acts as an integration wrapper instantiating both the `uart_tx` transmitter and `uart_rx` receiver modules to establish full serial link loopbacks.
 
-## Protocol Overview
+## 🌐 Protocol Overview
 UART communicates asynchronously. The integrated transceiver module enables concurrent parallel-to-serial transmission and serial-to-parallel reception over separate TX and RX lines.
 
-## Inputs & Outputs
+## 🔌 Inputs & Outputs
 
 | Port Name | Bit Width | Type   | Description |
 |-----------|-----------|--------|-------------|
@@ -21,7 +21,7 @@ UART communicates asynchronously. The integrated transceiver module enables conc
 | `rx_dout` | 8         | output | 8-bit deserialized parallel output |
 | `rx_done` | 1         | output | Valid received pulse |
 
-## Files Included
+## 📁 Files Included
 - `src/uart.v` (contains Verilog source code)
 - `testbench/uart_tb.v` (contains self-checking testbench)
 - `rtl/` (empty, schematic layout directory)

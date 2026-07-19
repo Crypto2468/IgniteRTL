@@ -1,9 +1,9 @@
-# NAND-based SR Flip-Flop
+# 🎚️ NAND-based SR Flip-Flop
 
-## Description
+## 📝 Description
 An SR Flip-Flop is an edge-triggered storage element. This implementation utilizes cross-coupled NAND gates configured in a Master-Slave topology to operate as a positive-edge triggered flip-flop.
 
-## Truth Table
+## 📋 Truth Table
 | Input S | Input R | Clock | Output Q(t+1) | Output Q_n(t+1) | Description |
 |:-------:|:-------:|:-----:|:-------------:|:---------------:|-------------|
 |    0    |    0    |  pos  |     Q(t)      |     Q_n(t)      | Hold State  |
@@ -11,7 +11,7 @@ An SR Flip-Flop is an edge-triggered storage element. This implementation utiliz
 |    1    |    0    |  pos  |       1       |        0        | Set State   |
 |    1    |    1    |  pos  |   Undefined   |    Undefined    | Invalid     |
 
-## Module I/O
+## 🔹 Module I/O
 | Port Name | Bit Width | Type   | Description |
 |-----------|-----------|--------|-------------|
 | `clk`     | 1         | input  | Clock signal |
@@ -20,7 +20,7 @@ An SR Flip-Flop is an edge-triggered storage element. This implementation utiliz
 | `q`       | 1         | output | Flip-flop output state |
 | `q_n`     | 1         | output | Complement output state |
 
-## Files Included
+## 📁 Files Included
 - `src/` (contains Verilog source code)
 - `testbench/` (contains self-checking testbench)
 - `rtl/` (empty, schematic layout directory)

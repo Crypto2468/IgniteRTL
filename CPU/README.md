@@ -1,8 +1,8 @@
-# Central Processing Unit (CPU) Subsystems Portfolio
+# 💻 Central Processing Unit (CPU) Subsystems Portfolio
 
 Welcome to the CPU Subsystems section of the portfolio. This directory features synthesizable, undergraduate-level Verilog implementations of all building blocks necessary to construct a simple 8-bit RISC CPU core.
 
-## Project Structure
+## 📂 Project Structure
 Every CPU project subdirectory follows this unified self-contained folder structure:
 ```text
 <Project_Name>/
@@ -12,7 +12,7 @@ Every CPU project subdirectory follows this unified self-contained folder struct
 └── waveform/       # Simulation waveform screen captures (tracked via .gitkeep)
 ```
 
-## Directory Index
+## 📖 Directory Index
 
 | # | Project Folder | Description | Ports (I/O) |
 |---|---|---|---|

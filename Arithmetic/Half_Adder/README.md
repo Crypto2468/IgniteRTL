@@ -1,9 +1,9 @@
-# Half Adder
+# ➕ Half Adder
 
-## Description
+## 📝 Description
 The Half Adder is a fundamental combinational arithmetic circuit that performs the addition of two 1-bit binary numbers. It is the building block of all binary addition architectures.
 
-## Truth Table
+## 📋 Truth Table
 | Input `a` | Input `b` | Output `sum` | Output `co` |
 | :---: | :---: | :---: | :---: |
 |   0   |   0   |   0   |   0   |
@@ -11,7 +11,7 @@ The Half Adder is a fundamental combinational arithmetic circuit that performs t
 |   1   |   0   |   1   |   0   |
 |   1   |   1   |   0   |   1   |
 
-## Module I/O
+## 🔹 Module I/O
 | Port Name | Bit Width | Type | Description |
 |-----------|-----------|------|-------------|
 | `a`       | 1         | input| First binary input operand |
@@ -19,7 +19,7 @@ The Half Adder is a fundamental combinational arithmetic circuit that performs t
 | `sum`     | 1         | output| Least significant bit of addition (Sum) |
 | `co`      | 1         | output| Most significant bit of addition (Carry-out) |
 
-## Files Included
+## 📁 Files Included
 - `src/` (contains Verilog source code)
 - `testbench/` (contains self-checking testbench)
 - `rtl/` (empty, schematic layout directory)

@@ -1,8 +1,8 @@
-# Memory Systems Portfolio
+# 💾 Memory Systems Portfolio
 
 Welcome to the Memory Systems section of the portfolio. This folder contains synthesizable, industry-standard Verilog implementations of various memory structures including ROMs, Single/Dual-Port RAMs, FIFOs, LIFOs, Register Files, and SRAM blocks.
 
-## Project Structure
+## 📂 Project Structure
 Every Memory project subdirectory follows this unified self-contained folder structure:
 ```text
 <Project_Name>/
@@ -12,7 +12,7 @@ Every Memory project subdirectory follows this unified self-contained folder str
 └── waveform/       # Simulation waveform screen captures (tracked via .gitkeep)
 ```
 
-## Directory Index
+## 📖 Directory Index
 
 | # | Project Folder | Description | Ports (I/O) |
 |---|---|---|---|

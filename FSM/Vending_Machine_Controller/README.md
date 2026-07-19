@@ -1,9 +1,9 @@
-# Vending Machine Controller
+# 🪙 Vending Machine Controller
 
-## Description
+## 📝 Description
 A vending machine controller that dispenses a product worth $1.50 (150 cents). It accepts $0.50 and $1.00 inputs, dispenses the product, and returns change if the accumulated credit exceeds the item cost.
 
-## State Diagram Explanation
+## 📊 State Diagram Explanation
 The FSM is structured into 5 states:
 - `S_0` (000): Initial state ($0.00 credit)
 - `S_50` (001): $0.50 credit
@@ -12,7 +12,7 @@ The FSM is structured into 5 states:
 - `S_200` (100): Dispense + $0.50 change state ($2.00 credit)
 `S_150` and `S_200` are transient states that automatically return to `S_0` on the next clock edge.
 
-## State Transition Table
+## 📋 State Transition Table
 
 | Current State | Coin Input | Next State | Dispense | Change Out |
 |:-------------:|:----------:|:----------:|:--------:|:----------:|
@@ -26,7 +26,7 @@ The FSM is structured into 5 states:
 |    `S_150`    |      X     |    `S_0`   |    1     |     0      |
 |    `S_200`    |      X     |    `S_0`   |    1     |     1      |
 
-## Inputs & Outputs
+## 🔌 Inputs & Outputs
 
 | Port Name | Bit Width | Type   | Description |
 |-----------|-----------|--------|-------------|
@@ -36,7 +36,7 @@ The FSM is structured into 5 states:
 | `dispense`| 1         | output | High when item is dispensed |
 | `change_out`| 1       | output | High when change ($0.50) is returned |
 
-## Files Included
+## 📁 Files Included
 - `src/vending_machine_controller.v` (contains Verilog source code)
 - `testbench/vending_machine_controller_tb.v` (contains self-checking testbench)
 - `rtl/` (empty, schematic layout directory)

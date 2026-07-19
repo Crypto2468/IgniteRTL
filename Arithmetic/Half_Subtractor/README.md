@@ -1,9 +1,9 @@
-# Half Subtractor
+# ➖ Half Subtractor
 
-## Description
+## 📝 Description
 The Half Subtractor is a fundamental combinational circuit used to subtract one single-bit binary number from another. It computes the difference and borrow-out of the subtraction.
 
-## Truth Table
+## 📋 Truth Table
 | Input `a` | Input `b` | Output `diff` | Output `bout` |
 | :---: | :---: | :---: | :---: |
 |   0   |   0   |   0   |   0   |
@@ -11,7 +11,7 @@ The Half Subtractor is a fundamental combinational circuit used to subtract one 
 |   1   |   0   |   1   |   0   |
 |   1   |   1   |   0   |   0   |
 
-## Module I/O
+## 🔹 Module I/O
 | Port Name | Bit Width | Type | Description |
 |-----------|-----------|------|-------------|
 | `a`       | 1         | input| Minuend input |
@@ -19,7 +19,7 @@ The Half Subtractor is a fundamental combinational circuit used to subtract one 
 | `diff`    | 1         | output| Difference output ($a - b$) |
 | `bout`    | 1         | output| Borrow-out output |
 
-## Files Included
+## 📁 Files Included
 - `src/` (contains Verilog source code)
 - `testbench/` (contains self-checking testbench)
 - `rtl/` (empty, schematic layout directory)

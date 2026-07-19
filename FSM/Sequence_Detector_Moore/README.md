@@ -1,9 +1,9 @@
-# Sequence Detector (Moore Machine)
+# 🔍 Sequence Detector (Moore Machine)
 
-## Description
+## 📝 Description
 A Moore Finite State Machine (FSM) sequence detector designed to detect the overlapping binary sequence `1011`. In a Moore machine, the output is a function only of the current state, causing the output transition to be clock-synchronous and delayed by one clock cycle compared to a Mealy FSM.
 
-## State Diagram Explanation
+## 📊 State Diagram Explanation
 The Moore FSM transitions through five states:
 - `S_RESET` (000): waiting for '1'
 - `S_1` (001): '1' detected
@@ -11,7 +11,7 @@ The Moore FSM transitions through five states:
 - `S_101` (011): '101' detected
 - `S_1011` (100): '1011' fully detected (dout is high only in this state)
 
-## State Transition Table
+## 📋 State Transition Table
 
 | Current State | Input (`din`) | Next State | Output (`dout`) |
 |:-------------:|:-------------:|:----------:|:--------------:|
@@ -26,7 +26,7 @@ The Moore FSM transitions through five states:
 |   `S_1011`    |       0       |   `S_10`   |        1       |
 |   `S_1011`    |       1       |   `S_1`    |        1       |
 
-## Inputs & Outputs
+## 🔌 Inputs & Outputs
 
 | Port Name | Bit Width | Type   | Description |
 |-----------|-----------|--------|-------------|
@@ -35,7 +35,7 @@ The Moore FSM transitions through five states:
 | `din`     | 1         | input  | Serial data input stream |
 | `dout`    | 1         | output | High when `1011` sequence is detected |
 
-## Files Included
+## 📁 Files Included
 - `src/sequence_detector_moore.v` (contains Verilog source code)
 - `testbench/sequence_detector_moore_tb.v` (contains self-checking testbench)
 - `rtl/` (empty, schematic layout directory)

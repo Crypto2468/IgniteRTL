@@ -1,9 +1,9 @@
-# Binary to Gray Code Converter
+# 🔄 Binary to Gray Code Converter
 
-## Description
+## 📝 Description
 A Binary to Gray Code Converter is a combinational logic circuit that converts a standard 4-bit binary number (`bin[3:0]`) into its equivalent 4-bit Gray code representation (`gray[3:0]`). Gray code is an unweighted code where two successive values differ by only one bit, which is useful in error correction and clock domain crossings (such as in asynchronous FIFOs).
 
-## Truth Table
+## 📋 Truth Table
 | Binary Input (`bin[3:0]`) | Decimal Value | Gray Code Output (`gray[3:0]`) |
 |:------------------------:|:-------------:|:-----------------------------:|
 |           0000           |       0       |             0000              |
@@ -23,13 +23,13 @@ A Binary to Gray Code Converter is a combinational logic circuit that converts a
 |           1110           |      14       |             1001              |
 |           1111           |      15       |             1000              |
 
-## Module I/O
+## 🔹 Module I/O
 | Port Name | Bit Width | Type   | Description |
 |-----------|-----------|--------|-------------|
 | `bin`     | 4         | input  | 4-bit standard binary input |
 | `gray`    | 4         | output | 4-bit Gray code output |
 
-## Files Included
+## 📁 Files Included
 - `src/` (contains Verilog source code)
 - `testbench/` (contains self-checking testbench)
 - `rtl/` (empty, schematic layout directory)

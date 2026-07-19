@@ -1,12 +1,12 @@
-# Booth Multiplier (Signed Radix-2 Multiplier)
+# ✖️ Booth Multiplier (Signed Radix-2 Multiplier)
 
-## Description
+## 📝 Description
 The Booth Multiplier is a sequential digital arithmetic module that computes the signed $2N$-bit product of two $N$-bit signed numbers (in two's complement form) using Radix-2 Booth's multiplication algorithm.
 
-## Truth Table
+## 📋 Truth Table
 
 
-## Module I/O
+## 🔹 Module I/O
 | Port Name | Bit Width | Type | Description |
 |-----------|-----------|------|-------------|
 | `clk`     | 1         | input| System Clock |
@@ -18,7 +18,7 @@ The Booth Multiplier is a sequential digital arithmetic module that computes the
 | `ready`   | 1         | output| Active-high indicating multiplier is ready for inputs |
 | `done`    | 1         | output| Active-high pulse indicating computation completed |
 
-## Files Included
+## 📁 Files Included
 - `src/` (contains Verilog source code)
 - `testbench/` (contains self-checking testbench)
 - `rtl/` (empty, schematic layout directory)
