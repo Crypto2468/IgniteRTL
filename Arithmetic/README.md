@@ -8,7 +8,6 @@ Every arithmetic module folder follows this strict self-contained layout:
 <Project_Name>/
 ├── src/            # Verilog source code (.v)
 ├── testbench/      # Testbench file for stimulus verification (.v)
-├── truth_table/    # Truth table reference (tracked via .gitkeep)
 ├── rtl/            # RTL logic gate schematics (tracked via .gitkeep)
 └── waveform/       # Simulation waveform screen captures (tracked via .gitkeep)
 ```

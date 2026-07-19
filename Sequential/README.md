@@ -8,7 +8,6 @@ Every sequential logic project subdirectory follows this unified self-contained 
 <Project_Name>/
 ├── src/            # Verilog source code (.v)
 ├── testbench/      # Testbench stimuli verification (.v)
-├── truth_table/    # Truth table reference (tracked via .gitkeep)
 ├── rtl/            # RTL logic gate schematics (tracked via .gitkeep)
 └── waveform/       # Simulation waveform screen captures (tracked via .gitkeep)
 ```
